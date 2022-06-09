@@ -1,14 +1,18 @@
 package ru.skypro;
 
-public class task2 {
+import java.time.LocalDate;
+
+public class Task2 {
     public static void main(String[] args) {
         int clientOS = 0;
-        int clientDeviceYear = 2016;
-        phone(clientOS, clientDeviceYear);
+        int clientDeviceYear = 2022;
+        CheckPhoneModel(clientOS, clientDeviceYear);
     }
-    static void phone(int clientOS, int clientDeviceYear){
+
+    static void CheckPhoneModel(int clientOS, int clientDeviceYear) {
+        int currentYear = LocalDate.now().getYear();
         boolean newIos = clientOS == 0;
-        boolean oldPhone = clientDeviceYear < 2015;
+        boolean oldPhone = clientDeviceYear < currentYear;
         boolean newAndroid = clientOS == 1;
         if (newIos) {
             if (oldPhone) {
