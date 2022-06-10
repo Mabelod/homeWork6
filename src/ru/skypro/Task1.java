@@ -6,7 +6,7 @@ public class Task1 {
         calculateYear(year);
     }
 
-    static void calculateYear(int year) {
+    private static void calculateYear(int year) {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " является високосным");
         } else {

@@ -6,10 +6,10 @@ public class Task2 {
     public static void main(String[] args) {
         int clientOS = 0;
         int clientDeviceYear = 2022;
-        CheckPhoneModel(clientOS, clientDeviceYear);
+        checkPhoneModel(clientOS, clientDeviceYear);
     }
 
-    static void CheckPhoneModel(int clientOS, int clientDeviceYear) {
+    private static void checkPhoneModel(int clientOS, int clientDeviceYear) {
         int currentYear = LocalDate.now().getYear();
         boolean newIos = clientOS == 0;
         boolean oldPhone = clientDeviceYear < currentYear;

@@ -1,16 +1,16 @@
 package ru.skypro;
 
 public class Lecture {
-    static void printSeparator() {
+    private static void printSeparator() {
         System.out.println("+++++++++++++++++++");
         System.out.println("-------------------");
     }
 
-    static void printIssues(int issueCount) {
+    private static void printIssues(int issueCount) {
         System.out.println(issueCount);
     }
 
-    static int sum(int[] numbers) {
+    private static int sum(int[] numbers) {
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
             sum = sum + numbers[i];

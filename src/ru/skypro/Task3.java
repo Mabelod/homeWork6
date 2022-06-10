@@ -7,7 +7,7 @@ public class Task3 {
         System.out.println("Потребуется дней: " + days);
     }
 
-    static int calculateDistance(int distance) {
+    private static int calculateDistance(int distance) {
         int days = 1;
         boolean interval1 = distance > 20;
         boolean interval2 = distance > 60;
@@ -15,7 +15,6 @@ public class Task3 {
         if (interval1) {
             days++;
         }
-
         if (interval2) {
             days++;
         }
